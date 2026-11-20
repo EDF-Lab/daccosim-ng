@@ -1,0 +1,80 @@
+<!--
+  ~  Copyright 2013-2018 - Monentia
+  ~
+  ~   Daccosim is a collaborative development effort between EDF (France),
+  ~   CentraleSupélec (France), EIFER Institute (Germany), SIANI institute (Spain)
+  ~   and Monentia S.L. (Spain)
+  ~
+  ~  This File is part of Daccosim Project
+  ~
+  ~ Daccosim Project is free software: you can redistribute it and/or modify
+  ~  it under the terms of the GNU Lesser General Public License as published by
+  ~  the Free Software Foundation, either version 3 of the License.
+  ~
+  ~  Daccosim Project is distributed in the hope that it will be useful,
+  ~  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~  GNU Lesser General Public License for more details.
+  ~
+  ~  You should have received a copy of the GNU Lesser General Public License
+  ~  along with Daccosim. If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<mxStylesheet>
+	<add as="defaultVertex">
+        <add as="perimeter" value="rectanglePerimeter"/>
+        <add as="fontSize" value="12"/>
+		<add as="fontColor" value="white"/>
+		<add as="fontFamily" value="Arial"/>
+		<add as="fontStyle" value="1"/>
+		<add as="align" value="center"/>
+		<add as="verticalAlign" value="middle"/>
+	</add>
+	<add as="defaultEdge">
+		<add as="shape" value="connector"/>
+		<add as="edgeStyle" value="elbowEdgeStyle"/>
+		<add as="labelBackgroundColor" value="white"/>
+		<add as="endArrow" value="classic"/>
+		<add as="endSize" value="15"/>
+		<add as="fontSize" value="12"/>
+		<add as="align" value="center"/>
+		<add as="verticalAlign" value="middle"/>
+		<add as="edgeStyle" value="elbowEdgeStyle"/>
+		<add as="strokeWidth" value="2"/>
+		<add as="strokeColor" value="black"/>
+	</add>
+	<add as="fmu" extend="defaultVertex">
+        <add as="shape" value="rectangle"/>
+		<add as="fillColor" value="#2DB100"/>
+	</add>
+    <add as="matryoshka" extend="fmu">
+        <add as="fillColor" value="#f03b20"/>
+    </add>
+	<add as="circle" extend="defaultVertex">
+		<add as="shape" value="ellipse"/>
+		<add as="fontSize" value="20"/>
+		<add as="fillColor" value="#cdcdcd"/>
+		<add as="strokeWidth" value="2"/>
+		<add as="strokeColor" value="black"/>
+		<add as="fontColor" value="black"/>
+	</add>
+	<add as="adder" extend="circle"/>
+	<add as="multiplier" extend="circle"/>
+	<add as="gain" extend="circle"/>
+	<add as="offset" extend="circle"/>
+	<add as="triangle">
+		<add as="shape" value="triangle"/>
+		<add as="perimeter" value="trianglePerimeter"/>
+	</add>
+	<add as="externalinput" extend="triangle">
+		<add as="align" value="left"/>
+		<add as="fillColor" value="#0955EF"/>
+	</add>
+	<add as="externaloutput" extend="triangle">
+		<add as="align" value="left"/>
+		<add as="fillColor" value="white"/>
+		<add as="strokeColor" value="#D71A05"/>
+		<add as="strokeWidth" value="3"/>
+		<add as="fontColor" value="black"/>
+	</add>
+</mxStylesheet>

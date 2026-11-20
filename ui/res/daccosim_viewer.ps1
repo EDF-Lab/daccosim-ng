@@ -1,0 +1,1 @@
+start-process -FilePath "$Env:OPENMODELICAHOME\bin\OMPlot" -ArgumentList "--filename=`"$args`"", "--footer=`"DACCOSIM NG post-mortem viewer`"", "--title=`"File $args`"", "--xlabel=`"time `(seconds`)`"", "--legend-position=right", "--curve-width=2", "--plotAll"

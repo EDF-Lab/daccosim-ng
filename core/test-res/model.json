@@ -1,0 +1,56 @@
+{
+  "settings": {
+    "coInitialization": {
+      "residualsTolerance": 1.0E-5,
+      "maxIterations": 100
+    },
+    "startTime": 0.0,
+    "stopTime": 18.0,
+    "stepper": {
+      "method": "ConstantStep",
+      "order": 3,
+      "stepSize": 0.001,
+      "minStep": 0.1,
+      "maxStep": 0.9,
+      "safetyFactor": 0.9
+    }
+  },
+  "nodes": [
+    {
+      "CLASSNAME": "eu.simulage.daccosim.view.FMU",
+      "INSTANCE": {
+        "path": "D:\\Users\\jevora\\repositories\\daccosim-simulage\\core\\test-res\\tkwithouteo.fmu",
+        "beforeInitValues": [],
+        "inInitValues": [],
+        "id": "tkwithouteo",
+        "inputs": [],
+        "outputs": [
+          {
+            "id": "eo.input_1",
+            "type": "Real",
+            "value": "0.0"
+          }
+        ],
+        "variables": [
+          {
+            "id": "BarrelGwin3264.Water",
+            "type": "Real"
+          }
+        ]
+      }
+    }
+  ],
+  "arrows": [],
+  "export": {
+    "cellSeparator": ";",
+    "decimalSeparator": ".",
+    "prefix": "tkwithoueoFMUMAT",
+    "variables": [
+      "tkwithouteo.BarrelGwin3264.Water",
+      "tkwithouteo.eo.input_1"
+    ],
+    "folder": {
+      "path": "D:\\Users\\jevora\\repositories\\daccosim-simulage\\core\\test-res"
+    }
+  }
+}
